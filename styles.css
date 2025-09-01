@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; /*escolhe a font e se caso não der load vai dar load na serif*/
+}
+
+body {
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.conteudo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textos {
+    width: 600px;
+}
+
+h2 {
+    color: #333;
+    font-size: 60;
+    font-weight: bold;
+}
+
+span {
+    color: #017143;
+    font-size: 65px;
+    font-weight: 900px;
+}
+
+.botao {
+    background: #017143;
+    color: white; /*cor do texto no caso*/
+    border-radius: 40px; /*arredondamento da borda*/
+    border: none; /*coloca uma borda no botão ou nesse caso, tira*/
+    cursor: pointer; /*muda o cursor do mouse para um pointer*/
+    padding: 10px; /*espaçamento interno*/
+    margin-top: 20px; /*cria uma margem*/
+    transition: 0.5s;
+}
+
+button:hover{ /*HOVER pra quando o mouser passar por cima ele fazer algo*/
+    
+    background-color: #018950;
+}
+
+button:active{
+    background-color: #015c41;
+}
+
+.sundae {
+    size: 600px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 250px;
+}
+
+.pequeninos {
+    display: flex;
+    justify-content: center;
+
+}
+
+.pqn {
+    width: 60px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pqn:hover {
+    transform: translateY(-20px);
+}
+
+.logo {
+    width: 80px;
+}
+.sundaeImg {
+    width: 340px;
+}
+
+.circulo {
+    background: #017143;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: circle(600px at right 800px);
+    z-index: -1;
+}
